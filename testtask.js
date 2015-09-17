@@ -1,6 +1,8 @@
+CustomObjects = new Mongo.Collection('customObjects');
+
 if (Meteor.isClient) {
   // counter starts at 0
-  Session.setDefault('counter', 0);
+  //Session.setDefault('counter', 0);
 
   Template.hello.helpers({
     counter: function () {
@@ -14,10 +16,7 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
-  
-   Accounts.ui.config({
-    passwordSignupFields: "USERNAME_ONLY"
-  });
+
 }
 
 if (Meteor.isServer) {

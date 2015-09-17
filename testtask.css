@@ -3,3 +3,18 @@
 .login {
 	margin: auto
 }
+
+body { 
+	padding-top: 70px; 
+}
+
+
+
+#object_type_btn {
+	padding-left: 10px
+}
+
+#new_object_form {
+	margin-left: 200px;
+	width: 1000px;
+}
