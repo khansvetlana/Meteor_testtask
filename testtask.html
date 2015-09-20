@@ -3,11 +3,13 @@
 </head>
 
 <body>
+	{{> login}}
 	{{#if currentUser}}
 		{{> menu}}
 		{{> newObject}}
-	{{else}}
-		{{> login}}
+		{{> allObjects}}
+	<!-- {{else}}
+		{{> login}} -->
 	{{/if}}
 </body>
 

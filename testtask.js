@@ -1,4 +1,3 @@
-CustomObjects = new Mongo.Collection('customObjects');
 
 if (Meteor.isClient) {
   // counter starts at 0
@@ -16,6 +15,12 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
+  
+  Template.allObjects.helpers({
+    CustomObjects: function () {
+        return CustomObjects;
+    }
+});
 
 }
 
