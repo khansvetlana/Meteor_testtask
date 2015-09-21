@@ -5,12 +5,20 @@ CustomObject = Astro.Class({
 	collection: CustomObjects,
 	fields: 
 	{
-		object_type: 'string',
-		first_name: 'string',
-		last_name: 'string',
+		objectType: 'string',
+		firstName: 'string',
+		lastName: 'string',
 		description: 'string',
 		latitude: 'number', 
 		longitude: 'number',
-		threat_level: 'number'
+		threatLevel: 'number'
 	}
 });
+
+
+
+
+
+
+
+

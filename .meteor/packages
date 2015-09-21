@@ -13,3 +13,10 @@ twbs:bootstrap
 aldeed:autoform
 aslagle:reactive-table
 jagi:astronomy
+iron:router
+aldeed:simple-schema
+aldeed:collection2
+useraccounts:core
+mizzao:bootstrap-3
+reactive-var
+useraccounts:bootstrap

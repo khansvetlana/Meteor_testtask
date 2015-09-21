@@ -2,22 +2,28 @@
 	<title>testtask</title>
 </head>
 
-<body>
-	{{> login}}
+<template name="main">
+	{{> atForm}}
 	{{#if currentUser}}
-		{{> menu}}
-		{{> newObject}}
-		{{> allObjects}}
-	<!-- {{else}}
-		{{> login}} -->
+		{{> layout}}
+	{{else}}
+		{{> atForm}}
 	{{/if}}
-</body>
-
-
-<template name="login">
-	<div class="login">
-		{{> loginButtons}}
-	</div>
 </template>
 
 
+<template name="layout">
+  <div class="container">
+    <header>
+		{{> menu}}
+    </header>
+	{{> yield}}
+  </div>
+</template>
+
+
+<template name="geoPortal">
+	<div class="geo">
+		<h3>Hello, World!</h3>
+	</div>	
+</template>
