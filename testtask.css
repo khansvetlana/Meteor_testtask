@@ -1,18 +1,13 @@
 /* CSS declarations go here */
 
-.login {
-	margin: auto
-}
-
 body { 
-	padding-top: 70px; 
+	padding: 50px;
 }
 
-#object_type_btn {
-	padding-left: 10px
+#new_object{
+	padding-top: 20px;
 }
 
-#new_object_form {
-	margin-left: 200px;
-	width: 1000px;
+#login_form{
+	width: 400px;
 }

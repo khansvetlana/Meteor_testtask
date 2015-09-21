@@ -1,3 +1,6 @@
 <template name="newObject">
-	{{> quickForm collection="CustomObjects" id="addNewObject" type="insert"}}
+	<div id="new_object">
+		{{> quickForm collection="CustomObjects" id="addNewObject" type="insert"}}
+		{{> allObjects}}
+	</div>
 </template>

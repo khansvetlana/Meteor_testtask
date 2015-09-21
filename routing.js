@@ -4,18 +4,10 @@ if (Meteor.isClient) {
 		layoutTemplate: 'main'
 	});
 	
-	/*Router.onBeforeAction(function() {
-		if (! Meteor.userId()) {
-			this.render('newObject');
-		} else {
-			this.next();
-		}
-	});*/
-	
 	Router.map(function () {
 		this.route('main', {
 			path: '/',
-			template: 'main'
+			template: 'home'
 		});
 		
 		this.route('newObject', {
@@ -23,9 +15,9 @@ if (Meteor.isClient) {
 			template: 'newObject'
 		});
 
-		/*this.route('geoPortal', {
+		this.route('geoPortal', {
 			path: '/geoPortal',
 			template: 'geoPortal'
-		});*/
+		});
 	});
 }

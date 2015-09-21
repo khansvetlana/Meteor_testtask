@@ -1,16 +1,18 @@
-<head>
-	<title>testtask</title>
-</head>
-
 <template name="main">
-	{{> atForm}}
-	{{#if currentUser}}
-		{{> layout}}
-	{{else}}
-		{{> atForm}}
-	{{/if}}
+	<div id="main">
+		{{#if currentUser}}
+			{{> layout}}
+		{{else}}
+			{{> login}}
+		{{/if}}
+	</div>
 </template>
 
+<template name="login">
+	<div id="login_form">
+		{{> atForm}}
+	</div>
+</template>
 
 <template name="layout">
   <div class="container">
@@ -21,6 +23,12 @@
   </div>
 </template>
 
+
+<template name="home">
+	<h3>Welcome to Meteor Test task!</h3>
+	<p>Created by Svetlana Khan</p>
+	<a href="https://github.com/khansvetlana/Meteor_testtask">Project repository on Github</a>
+</template>
 
 <template name="geoPortal">
 	<div class="geo">

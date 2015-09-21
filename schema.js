@@ -42,7 +42,7 @@ if (Meteor.isClient) {
 		},			
 		
 		threatLevel: {
-			type: String,
+			type: Number,
 			allowedValues: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 			optional: false
 		}
