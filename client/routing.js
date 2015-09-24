@@ -19,5 +19,11 @@ if (Meteor.isClient) {
 			path: '/geoPortal',
 			template: 'map'
 		});
+		
+		this.route('allObjects', {
+			path: '/allObjects',
+			template: 'allObjects'
+		});
+		
 	});
 }

@@ -1,3 +1,8 @@
 <template name="allObjects">
-	{{> reactiveTable class="table table-bordered table-hover" collection=customObjects showNavigation='always' rowsPerPage=5}}
+	{{> reactiveTable class="table table-bordered table-hover" collection=customObjects showNavigation='always' rowsPerPage=5 settings=settings }}
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active">
+			<a href="{{pathFor 'newObject'}}">Add new object</a>
+		</li>
+	</ul>
 </template>

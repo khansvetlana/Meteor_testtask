@@ -7,6 +7,44 @@ if (Meteor.isClient) {
 	Template.allObjects.helpers({
 		customObjects: function () {
 			return CustomObjects.find();
+		}, 
+		settings: function () {
+			return {
+				rowsPerPage: 5,
+				showFilter: true,
+				//showColumnToggles: false,
+				fields: [
+					{ 
+						key: 'objectType', 
+						label: 'Object type' 
+					}, { 
+						key: 'firstName', 
+						label: 'First name' 
+					}, { 
+						key: 'lastName', 
+						label: 'Last name' 
+					}, { 
+						key: 'description', 
+						label: 'Description' 
+					}, { 
+						key: 'latitude', 
+						label: 'Latitude' 
+					}, { 
+						key: 'longitude', 
+						label: 'Longitude' 
+					}, { 
+						key: 'threatLevel', 
+						label: 'ThreatLevel' 
+					}, { 
+						key: '_id', 
+						label: '', 
+						fn: function(_id) {  
+							var html = '<button class="btn btn-info btn-xs" type="button"><i class="fa fa-paste"></i> Edit</button>'
+							return new Spacebars.SafeString(html);
+						}  
+					}
+				]
+			};
 		}
 	});
 	
@@ -14,7 +52,7 @@ if (Meteor.isClient) {
 		mapOptions: function() {
 			if (GoogleMaps.loaded()) {
 				return {
-					center: new google.maps.LatLng(0, 0),
+					center: new google.maps.LatLng(52.2167, 21.0333),
 					zoom: 2
 				};
 			}	

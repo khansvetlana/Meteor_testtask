@@ -1,6 +1,10 @@
 <template name="newObject">
 	<div id="new_object">
 		{{> quickForm collection="CustomObjects" id="addNewObject" type="insert"}}
-		{{> allObjects}} 
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active">
+			<a href="{{pathFor 'allObjects'}}">Show all objects</a>
+		</li>
+	</ul>
 	</div>
 </template>
