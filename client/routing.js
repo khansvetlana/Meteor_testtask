@@ -15,9 +15,9 @@ if (Meteor.isClient) {
 			template: 'newObject'
 		});
 
-		this.route('geoPortal', {
+		this.route('map', {
 			path: '/geoPortal',
-			template: 'geoPortal'
+			template: 'map'
 		});
 	});
 }
